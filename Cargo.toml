@@ -1,0 +1,17 @@
+[package]
+name = "cbc-simulator"
+version = "0.1.0"
+authors = ["fringerus <fringerusk@rchaindao.com>"]
+edition = "2021"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+#proc-macro = true
+
+[[bin]]
+name = "cbc-sim"
+path="src/bin/main.rs"
+
+[dependencies]
+serde = { version = "1", features = ["derive","rc"] }
+serde_json = "1"
