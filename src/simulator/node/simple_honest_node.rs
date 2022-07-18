@@ -1,5 +1,5 @@
 use std::rc::Rc;
-use crate::network::{NodeID, Node, Link, Event, Transaction, ProtocolMsg};
+use crate::simulator::{NodeID, Node, Link, Event, Transaction, ProtocolMsg};
 
 pub struct SimpleHonestNode{
     id : NodeID,
@@ -15,7 +15,7 @@ impl Node for SimpleHonestNode{
         todo!()
     }
 
-    fn broad_cast(&mut self, msg: &ProtocolMsg)->Vec<Event>{
+    fn relay(&mut self, source_link: Rc<Link>, msg: &ProtocolMsg)->Vec<Event>{
         todo!()
     }
 

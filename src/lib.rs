@@ -1,4 +1,6 @@
-#![allow(dead_code)]
+#![allow(dead_code, unused_variables)] 
 
-mod network;
+mod simulator;
 mod visualizer;
+
+
